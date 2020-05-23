@@ -1,13 +1,231 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/main.css">
-    <title>[STUDENT NAME] | [CLASS] | Opdracht 3</title>
+    <title>unwynd - radio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/27fb07863e.js" crossorigin="anonymous"></script>
+    <script>
+        const toggleNavigationIcon = (navToggler) => {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('toggled');
+            navToggler.classList.toggle('toggled');
+        }
+    </script>
 </head>
+
 <body>
-    <div>Pas deze pagina aan met jouw code om opdracht 3 te vervolledigen!</div>
+
+    <!-- header -->
+    <header>
+        <div class="container-fluid ">
+            <div class="row no-gutters justify-content-center">
+                <div class="col-12 col-md-9">
+                    <div class="row no-gutters headerwrapper align-items-center justify-content-center">
+                        <div class="col-6 col-md-3">
+                            <div class="row no-gutters justify-content-center">
+                                <h1>unwynd</h1>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-1">
+                            <div class="row justify-content-center no-gutters">
+                                <a class="primarybtn-mobile no-display-desktop" href="#">log in</a>
+                            </div>
+                        </div>
+                        <div class="col-2 col-md-8">
+                            <div class="row no-gutters justify-content-center align-items-center">
+                                <div class="nav-links">
+                                    <ul>
+                                        <li> <a href="index.html">Home</a> </li>
+                                        <li> <a href="list.html">Podcasts</a> </li>
+                                        <li> <a href="#">Top 10</a> </li>
+                                        <li> <a class="no-display-mobile" href="#">Log In</a> </li>
+                                        <li> <a href="#" class="primarybtn-mobile">Listen Live</a> </li>
+                                    </ul>
+                                    <div class="footerbtns no-display-desktop">
+                                        <a href="#">contact us</a>
+                                        <a href="#">legal pages</a>
+                                    </div>
+                                    <div class="no-display-desktop">
+                                        <a href="#"> <i class="fab fa-facebook-square"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-youtube"></i></a>
+                                        <a href="#"><i class="fab fa-spotify"></i> </a>
+                                    </div>
+                                </div>
+                                <div class="nav-toggler" onclick="toggleNavigationIcon(this)">
+                                    <div class="bar1"></div>
+                                    <div class="bar2"></div>
+                                    <div class="bar3"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <!-- main -->
+    <main>
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <div class="row no-gutters justify-content-center">
+                        <div class="col-10 col-md-10 maincontent">
+                            <!-- the content you can just put underneath eachother wihtout defining the cols all the time -->
+
+                            <!-- card1 -->
+                            <div class="primaryCard col-12 col-md-6">
+                                <img src="images/recordstudio-unsplash.jpg" alt="sound panel">
+                                <a href="#" class="secondary-btn">listen live</a>
+                            </div>
+
+                            <!-- recently played list -->
+                            <div class="homepageList col-12 col-md-4">
+                                <!-- seperated into 3 little wrappers -->
+                                <!-- n1 -->
+                                <div class="listHeader">
+                                    <h2>Recently Played</h2>
+                                </div>
+                                <div class="listwrapper">
+                                    <div class="listContent">
+                                        <h3>Youth</h3>
+                                        <p>Shawn Mendes</p>
+                                    </div>
+                                    <div class="listTime">
+                                        <p>1min</p>
+                                    </div>
+                                </div>
+
+                                <!-- n2 -->
+                                <div class="listwrapper">
+                                    <div class="listContent">
+                                        <h3>See You Again</h3>
+                                        <p>Wiz Khalifa ft. Charlie Puth</p>
+                                    </div>
+                                    <div class="listTime">
+                                        <p>5min</p>
+                                    </div>
+                                </div>
+
+
+                                <!-- n3 -->
+                                <div class="listwrapper">
+                                    <div class="listContent">
+                                        <h3>Burn</h3>
+                                        <p>Ellie Goulding</p>
+                                    </div>
+                                    <div class="listTime">
+                                        <p>9min</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- card2 -->
+                            <div class="primaryCard col-12 col-md-6">
+                                <img src="images/earphones-w-coffee-unsplash.jpg" alt="earphones with coffee">
+                                <a href="list.html" class="secondary-btn">podcasts</a>
+                            </div>
+
+                            <!-- Top 10 list -->
+                            <div class="homepageList col-12 col-md-4">
+                                <!-- seperated into 3 little wrappers -->
+                                <!-- n1 -->
+                                <div class="listHeader">
+                                    <h2>Top 10</h2>
+                                </div>
+                                <div class="listwrapper">
+                                    <div class="listContent">
+                                        <h3>Youth</h3>
+                                        <p>Shawn Mendes</p>
+                                    </div>
+                                    <div class="listNumber">
+                                        <p>1</p>
+                                    </div>
+                                </div>
+
+                                <!-- n2 -->
+                                <div class="listwrapper">
+                                    <div class="listContent">
+                                        <h3>See You Again</h3>
+                                        <p>Wiz Khalifa ft. Charlie Puth</p>
+                                    </div>
+                                    <div class="listNumber">
+                                        <p>2</p>
+                                    </div>
+                                </div>
+
+
+                                <!-- n3 -->
+                                <div class="listwrapper">
+                                    <div class="listContent">
+                                        <h3>Burn</h3>
+                                        <p>Ellie Goulding</p>
+                                    </div>
+                                    <div class="listNumber">
+                                        <p>3</p>
+                                    </div>
+                                </div>
+                                <div class="loadMoreBtn">
+                                    <a href="#" class="primarybtn-mobile">load more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- container closed div underneath this line -->
+        </div>
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid footerwrapper">
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <div class="row no-gutters justify-content-center align-items-center">
+                        <div class="col-10 col-md-8 footerbtns">
+                            <div class="row no-gutters">
+                                <div class="col-6 col-md-3 legalpages">
+                                    <a href="#">legal pages</a>
+
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <a href="#">contact us</a>
+                                </div>
+                                
+
+                                <div class="col-md-6 no-display-mobile social-media">
+                                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                    <a href="#"><i class="fab fa-spotify"></i> </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>

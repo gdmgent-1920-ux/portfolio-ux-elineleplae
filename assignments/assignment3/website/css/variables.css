@@ -1,0 +1,15 @@
+/* variables */
+
+:root{
+    --color-white: #ffffff;
+    --color-lightgray: #ECECEC;
+    --color-red: #F2441D;
+    --color-darkorange: #F29829;
+    --color-midorange: #F2B544;
+    --color-lightorange: #F2CA7E;
+
+    --text-font:'Roboto', sans-serif;
+    --logo-font:'Dosis', sans-serif;
+
+
+}

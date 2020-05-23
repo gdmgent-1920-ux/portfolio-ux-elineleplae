@@ -1,0 +1,475 @@
+/*
+* my main css
+ */
+
+body {
+    color: var(--color-black);
+    background-color: var(--color-white);
+    font-family: var(--text-font);
+    color: var(--color-midorange)
+}
+
+img {
+    width: 100%;
+    padding: 0;
+}
+
+h1{
+    font-family: var(--logo-font);
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--color-white);
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 14px;
+    font-size: 18px;
+    color: var(--color-white);
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 18px;
+    color: var(--color-darkorange);
+    font-weight: 500;
+    margin: 0;
+    margin-top: 7px;
+
+}
+
+div.nav h3 {
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 5px;
+
+}
+
+.loadMoreBtn {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* displays */
+.no-display-mobile{
+    display: none;
+}
+.no-display-desktop{
+    display: block;
+
+}
+
+/* navigatie */
+ul{
+    padding: 0;
+
+}
+.nav-links{
+    display:none;
+}
+.nav-links.toggled ul li a{
+    color: var(--color-midorange);
+    font-size: 20px;
+    font-weight: 500;
+}
+.nav-links.toggled ul{
+    list-style: none;
+    text-align: center;
+
+}
+
+.nav-links.toggled ul li{
+    margin: 5px 0 15px 0;
+}
+.nav-links.toggled ul li a.primarybtn-mobile{
+    color: var(--color-white);
+    /* margin:0 25px 0 15px ; */
+}
+.nav-links.toggled{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-white);
+    z-index: 1;
+    padding-bottom: 100px;
+    
+}
+
+.nav-toggler.toggled{
+    color: var(--color-midorange);
+    z-index: 1;
+}
+
+.nav-links div a i{
+    padding: 20px;
+    margin: 0;
+    font-size: 35px;
+    color: var(--color-midorange);
+}
+
+
+/* header */
+header {
+    width: 100%;
+    background-color: var(--color-midorange);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+    height: 75px;
+
+
+
+}
+
+.headerwrapper {
+    height: 75px;
+    width: 100%;
+}
+
+.footerwrapper {
+    background-color: var(--color-midorange);
+    width: 100%;
+    height: 50px;
+}
+
+
+
+
+
+/* buttons */
+a {
+    text-decoration: none;
+    color: var(--color-white);
+    text-align: center;
+}
+
+a.primarybtn-mobile {
+    padding: 4px 20px;
+    text-transform: uppercase;
+    background-color: var(--color-red);
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+    font-weight: 500;
+}
+
+a.secondary-btn {
+    width: 100%;
+    background-color: var(--color-red);
+    text-transform: uppercase;
+    padding: 8px 0;
+    font-weight: 700;
+    text-align: center;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+}
+
+header ul a{
+    text-transform: uppercase;
+}
+header .nav-links div.footerbtns a{
+    color: var(--color-midorange);
+ padding: 25px;
+}
+
+/* card */
+
+.primaryCard {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+    padding: 0;
+}
+
+a.secondaryCard {
+    color: var(--color-midorange);
+    background-color: var(--color-lightgray);
+    text-align: left;
+
+
+}
+
+.secondaryCard img {
+    margin: 0;
+    padding: 0;
+}
+
+.secondaryCard {
+    background-color: var(--color-lightgray);
+
+}
+
+.cardcontent {
+    background-color: var(--color-lightgray);
+    margin: 0;
+    padding: 14px;
+    padding-bottom: 8px;
+    padding-top: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+
+
+
+}
+
+
+
+/* lists */
+
+/* hompagelists */
+
+.homepageList {
+    background-color: var(--color-midorange);
+    padding: 0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+}
+
+.listwrapper {
+    background-color: var(--color-white);
+    margin: 20px 0;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+
+}
+
+.listTime,
+.listNumber {
+    align-self: center;
+
+}
+
+.listTime {
+    font-size: 18px;
+    color: var(--color-midorange);
+    font-style: italic;
+}
+
+.listNumber {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--color-darkorange);
+}
+
+.listContent p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-midorange);
+    margin-bottom: 10px;
+}
+
+
+/* detailpage */
+
+.podcastHeader {
+    background-color: var(--color-darkorange);
+    color: var(--color-white);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+
+}
+
+.podcastHeaderContent {
+    margin-top: 12px;
+    margin-bottom: 20px;
+
+}
+
+.imgTime p {
+    margin: 0px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+
+.episodeCard {
+    display: flex;
+    background-color: var(--color-lightgray);
+    margin: 20px 0;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+    padding: 10px;
+
+}
+
+.episodeTitle {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    padding-right: 5px;
+
+}
+
+.imgTime {
+    align-self: center;
+}
+
+/* footer */
+
+.footerbtns {
+    font-style: italic;
+    font-size: 18px;
+    margin: 13px;
+}
+
+footer .legalpages {
+    text-align: start;
+}
+
+
+/* desktop */
+
+@media all and (min-width: 768px) {
+
+    /* maincontent plaatsing */
+    .maincontent {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around ;
+    }
+
+    .primaryCard {
+        align-self: flex-start;
+        margin-bottom: 30px;
+    }
+
+    .homepageList {
+        align-self: flex-end;
+    }
+
+    /* display */
+    .no-display-mobile{
+        display: block;
+
+    }
+    .no-display-desktop{
+        display:none;
+
+    }
+    .nav-links{
+        display: block;
+    }
+
+    /* header navigatie */
+    
+    header ul{
+        list-style: none;
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0;
+    }
+    header ul li{
+    padding-left: 10px;
+    margin: 0;
+
+    }
+    .nav-links ul li a{
+        font-size: 20px;
+        font-weight: 500;
+        padding-left: 15px;
+    }
+
+    /* fonts */
+    h1{
+        font-size: 60px;
+    }
+    h2{
+        padding-top: 8px;
+    }
+    h4{
+        margin-left: 15px;
+    }
+
+    /* footer */
+    div.footerbtns .social-media{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        font-size: 22px;
+        
+    }
+    
+
+    /* cards */
+  .cardcontent .primarybtn-mobile{
+      display: flex;
+      justify-content: center;
+      text-align:center;
+  }
+
+  /*  */
+  h3 a{
+      color: var(--color-darkorange);
+      display: inline-block;
+  }
+
+
+  .podcastHeader{
+      width: 100%;
+  }
+
+}
+
+
+
+
+
+/* hamburger Icon */
+.nav-toggler {
+    display: inline-block;
+    cursor: pointer;
+  }
+  @media all and (min-width: 768px){
+      .nav-toggler{
+          display: none;
+      }
+  }
+  
+  .nav-toggler .bar1,
+  .nav-toggler .bar2,
+  .nav-toggler .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: var(--color-white);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .nav-toggler.toggled .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+    background-color: var(--color-midorange);
+  }
+  
+  /* Fade out the second bar */
+  .nav-toggler.toggled .bar2 {
+    opacity: 0;
+
+  }
+  
+  /* Rotate last bar */
+  .nav-toggler.toggled .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+    background-color: var(--color-midorange);
+
+  }
+
+  

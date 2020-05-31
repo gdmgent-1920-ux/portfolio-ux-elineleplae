@@ -14,7 +14,7 @@ img {
     padding: 0;
 }
 
-h1{
+h1 {
     font-family: var(--logo-font);
     font-size: 40px;
     font-weight: 700;
@@ -41,13 +41,16 @@ h3 {
 
 div.nav h3 {
     text-transform: uppercase;
-    margin: 5px;
+    margin: 10px;
+    display: flex;
+    color: var(--color-midorange);
 }
 
 h4 {
     font-size: 16px;
     font-weight: 400;
     padding-left: 5px;
+    color: var(--color-darkorange);
 
 }
 
@@ -62,41 +65,47 @@ h4 {
 }
 
 /* displays */
-.no-display-mobile{
+.no-display-mobile {
     display: none;
 }
-.no-display-desktop{
+
+.no-display-desktop {
     display: block;
 
 }
 
 /* navigatie */
-ul{
+ul {
     padding: 0;
 
 }
-.nav-links{
-    display:none;
+
+.nav-links {
+    display: none;
 }
-.nav-links.toggled ul li a{
+
+.nav-links.toggled ul li a {
     color: var(--color-midorange);
     font-size: 20px;
     font-weight: 500;
 }
-.nav-links.toggled ul{
+
+.nav-links.toggled ul {
     list-style: none;
     text-align: center;
 
 }
 
-.nav-links.toggled ul li{
+.nav-links.toggled ul li {
     margin: 5px 0 15px 0;
 }
-.nav-links.toggled ul li a.primarybtn-mobile{
+
+.nav-links.toggled ul li a.primarybtn-mobile {
     color: var(--color-white);
     /* margin:0 25px 0 15px ; */
 }
-.nav-links.toggled{
+
+.nav-links.toggled {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -110,20 +119,21 @@ ul{
     background-color: var(--color-white);
     z-index: 1;
     padding-bottom: 100px;
-    
+
 }
 
-.nav-toggler.toggled{
+.nav-toggler.toggled {
     color: var(--color-midorange);
     z-index: 1;
 }
 
-.nav-links div a i{
+.nav-links div a i {
     padding: 20px;
     margin: 0;
     font-size: 35px;
-    color: var(--color-midorange);
+    color: var(--color-lightorange);
 }
+
 
 
 /* header */
@@ -132,9 +142,6 @@ header {
     background-color: var(--color-midorange);
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
     height: 75px;
-
-
-
 }
 
 .headerwrapper {
@@ -179,12 +186,13 @@ a.secondary-btn {
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
 }
 
-header ul a{
+header ul a {
     text-transform: uppercase;
 }
-header .nav-links div.footerbtns a{
-    color: var(--color-midorange);
- padding: 25px;
+
+header .nav-links div.footerbtns a {
+    color: var(--color-lightorange);
+    padding: 25px;
 }
 
 /* card */
@@ -259,7 +267,7 @@ a.secondaryCard {
 
 .listTime {
     font-size: 18px;
-    color: var(--color-midorange);
+    color: var(--color-lightorange);
     font-style: italic;
 }
 
@@ -326,10 +334,7 @@ a.secondaryCard {
     font-style: italic;
     font-size: 18px;
     margin: 13px;
-}
-
-footer .legalpages {
-    text-align: start;
+    text-align: center;
 }
 
 
@@ -341,7 +346,7 @@ footer .legalpages {
     .maincontent {
         display: flex;
         flex-wrap: wrap;
-        justify-content:space-around ;
+        justify-content: space-around;
     }
 
     .primaryCard {
@@ -354,75 +359,97 @@ footer .legalpages {
     }
 
     /* display */
-    .no-display-mobile{
+    .no-display-mobile {
         display: block;
 
     }
-    .no-display-desktop{
-        display:none;
+
+    .no-display-desktop {
+        display: none;
 
     }
-    .nav-links{
+
+    .nav-links {
         display: block;
     }
 
     /* header navigatie */
-    
-    header ul{
+
+    header ul {
         list-style: none;
         display: flex;
         flex-wrap: nowrap;
         margin: 0;
     }
-    header ul li{
-    padding-left: 10px;
-    margin: 0;
+
+    header ul li {
+        padding-left: 10px;
+        margin: 0;
 
     }
-    .nav-links ul li a{
+
+    .nav-links ul li a {
         font-size: 20px;
         font-weight: 500;
-        padding-left: 15px;
+        padding: 0 10px;
+    }
+
+    .nav-links ul li a.primarybtn-mobile {
+        margin-left: 50px;
+        padding: 4px 20px;
     }
 
     /* fonts */
-    h1{
+    h1 {
         font-size: 60px;
     }
-    h2{
+
+    h2 {
         padding-top: 8px;
     }
-    h4{
+
+    h4 {
         margin-left: 15px;
     }
 
     /* footer */
-    div.footerbtns .social-media{
+    div.footerbtns .social-media {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         font-size: 22px;
-        
+
     }
-    
+
+    main{
+        min-height: calc(100vh - 50px - 75px);
+    }
 
     /* cards */
-  .cardcontent .primarybtn-mobile{
-      display: flex;
-      justify-content: center;
-      text-align:center;
-  }
+    .cardcontent .primarybtn-mobile {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
 
-  /*  */
-  h3 a{
-      color: var(--color-darkorange);
-      display: inline-block;
-  }
+    a.secondary-btn {
+        padding: 10px 0;
+        font-size: 20px;
+    }
+
+    /*  */
+    h3 a {
+        color: var(--color-midorange);
+        text-align: start;
+    }
 
 
-  .podcastHeader{
-      width: 100%;
-  }
+    .podcastHeader {
+        width: 100%;
+    }
+
+
+    /* animations? */
 
 }
 
@@ -434,42 +461,59 @@ footer .legalpages {
 .nav-toggler {
     display: inline-block;
     cursor: pointer;
-  }
-  @media all and (min-width: 768px){
-      .nav-toggler{
-          display: none;
-      }
-  }
-  
-  .nav-toggler .bar1,
-  .nav-toggler .bar2,
-  .nav-toggler .bar3 {
+}
+
+@media all and (min-width: 768px) {
+    .nav-toggler {
+        display: none;
+    }
+}
+
+.nav-toggler .bar1,
+.nav-toggler .bar2,
+.nav-toggler .bar3 {
     width: 35px;
     height: 5px;
     background-color: var(--color-white);
     margin: 6px 0;
     transition: 0.4s;
-  }
-  
-  /* Rotate first bar */
-  .nav-toggler.toggled .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Rotate first bar */
+.nav-toggler.toggled .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
     background-color: var(--color-midorange);
-  }
-  
-  /* Fade out the second bar */
-  .nav-toggler.toggled .bar2 {
+}
+
+/* Fade out the second bar */
+.nav-toggler.toggled .bar2 {
     opacity: 0;
 
-  }
-  
-  /* Rotate last bar */
-  .nav-toggler.toggled .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+/* Rotate last bar */
+.nav-toggler.toggled .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
     background-color: var(--color-midorange);
 
-  }
+}
 
-  
+a:hover {
+    color: var(--color-darkorange);
+    transition: color .25s ease-in;
+}
+
+.nav-links.toggled a:hover,
+.nav-links.toggled a.primarybtn-mobile:hover{
+    color: var(--color-lightorange);
+    transition: color .25s ease-in;
+}
+
+.nav-links.toggled .footerbtns a:hover,
+.nav-links.toggled a i:hover {
+    color: var(--color-darkorange);
+    transition: color .25s ease-in;
+
+}
